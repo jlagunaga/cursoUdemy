@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Aprendiendo Jquery</title>
+    <!-- Usando CND -->
+    <script src="https://code.jquery.com/jquery-3.5.1.js"
+        integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="js/01-selectores.js"></script>
+
+    <style>
+        .grande {
+            border: 2px solid blue;
+            font-size: 20px;
+        }
+        .resaltado{
+            border-bottom: 2px solid green;
+        }
+    </style>
+
+</head>
+
+<body>
+    <p>
+        <ul>
+            <li>
+                <a href="https://www.google.com.pe" title="google">Ir a Google</a>
+            </li>
+            <li>
+                <a href="https://www.facebook.com/" title="facebook">Ir a Facebook</a>
+            </li>
+        </ul>
+    </p>
+
+    <h1>Aprendiendo Jquery con Victor Robles Web</h1>
+    <p id="rojo" class="zebra">Ejercicios de Jquery</p>
+    <p id="amarillo" class="zebra">Practicando don Jquery</p>
+    <p id="verde" class="zebra">Quiero ser un parrafo verde</p>
+    <p class="zebra">parrafo sin fondo</p>
+
+    <div id="caja">
+        <p>Hola soy una Caja</p>
+        <ul>
+            <li>Elelemnto 1</li>
+            <li class="resaltado">Elelemnto 2</li>
+        </ul>
+        <span class="resaltado">
+            Soy un span
+        </span>
+    </div>
+
+</body>
+
+</html>

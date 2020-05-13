@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aprendiendo JQery</title>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.js"
+        integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+
+
+    <link rel="stylesheet" href="js/jquery-ui-1.12.1/jquery-ui.min.css">
+    <link rel="stylesheet" href="js/jquery-ui-1.12.1/jquery-ui.structure.min.css">
+    <link rel="stylesheet" href="js/jquery-ui-1.12.1/jquery-ui.theme.min.css">
+
+    <script type="text/javascript" src="js/jquery-ui-1.12.1/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="js/06-Interfaces.js"></script>
+    <style>
+        .elemento {
+            width: 300px;
+            height: 200px;
+            border: 4px solid black;
+            background: lightblue;
+            margin: 20px;
+            float: left;
+        }
+
+        .listaSel li {
+            width: 80%;
+            padding: 20px;
+            border: 1px solid #CCC;
+            list-style: none;
+            cursor: pointer;
+        }
+
+        ul .ui-selecting {
+            background: green;
+        }
+
+        ul .ui-selected {
+            background: blue;
+        }
+
+        #elemento_movido {
+            width: 100px;
+            height: 100px;
+            border: 4px solid red;
+        }
+
+        #area {
+            width: 300px;
+            height: 300px;
+            border: 4px solid green;
+        }
+
+        .elemento {
+            background: pink;
+            float: none;
+            display: none;
+        }
+    </style>
+
+</head>
+
+<body>
+    <h1>Apendiendo JQery - Joseph Laguna - JQuery UI </h1>
+    <hr />
+    <h3>Efectos</h3>
+    <h4>Tooltip</h4>
+
+    <a href="#" title="Accedere a la seccion de mis datos de eta web ">Mis Datos </a>
+    <a href="#" title="Logueate en la web">Identificarses </a>
+    <a href="#" title="Ver mis amigos">Amigos</a>
+    <hr />
+
+    <h4>Cuadros de dialogo</h4>
+    <div id="popup" title="¿Estas seguro?">
+        <p>si continuas en ele curso aprendere mucho de Java Script</p>
+    </div>
+    <hr />
+    <h4>Calendario</h4>
+    <input type="text" id="calendario">
+    <hr />
+    <h4>Pestañas</h4>
+    <div id="pestanas">
+        <ul>
+            <li><a href="#tabs-1">Pestaña 1</a></li>
+            <li><a href="#tabs-2">Pestaña 2</a></li>
+            <li><a href="#tabs-3">Pestaña 3</a></li>
+        </ul>
+        <div id="tabs-1">
+            soy la primera pestaña
+        </div>
+        <div id="tabs-2">
+            soy el la segunda pestaña
+        </div>
+        <div id="tabs-3">
+            soy el la tercera pestaña
+        </div>
+    </div>
+    <hr />
+
+    <button id="mostrar">Mostrar</button>
+    <div class="caja_efecto elemento">
+    </div>
+
+    <div id="elemento_movido"></div>
+    <br>
+    <div id="area"></div>
+
+    <ul class="listaSel">
+        <li>GTA 5</li>
+        <li>Devil My Cry </li>
+        <li>Fifa</li>
+        <li>Dantes Inferno </li>
+        <li>Uncharted </li>
+        <li>Crash Car</li>
+        <li>Mario Bross</li>
+        <li>Resident Evil</li>
+    </ul>
+    <div class="elemento">
+        hola soy un elemento de la web 1
+    </div>
+    <div class="elemento">
+        hola soy un elemento de la web 2
+    </div>
+    <div class="elemento">
+        hola soy un elemento de la web 3
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript" src="js/32-Ejercicio_Dom.js"></script>
+
+    <style>
+        .box {
+            width: 350px;
+            height: 250px;
+            float: left;
+            margin: 20px;
+        }
+
+        .dashed {
+            border: 3px dashed black;
+            padding: 5px;
+        }
+        .error{
+            color: red;
+
+        }
+    </style>
+</head>
+
+<body>
+    <!--  
+        1. Formulario campos: Nombres, Apellidos y Edad
+        2. Boton de enviar el formulario: evento Submit
+        3. Mostrar datos de pantalla
+        4. Tener un boton que al darle click nos muestra los datos actuales del formulario
+    -->
+    <div class="box" >
+        <p>
+            <form action=""  method="POST" id="formulario" onsubmit="return false;">
+                <label for="nombre">Nombre</label><br>
+                <input type="text" name="nombre" id="nombre"><span id="errNombre" class="error"></span><br>
+
+                <label for="apellido">Apellido</label><br>
+                <input type="text" name="apellido" id="apellido"><span id="errApellido" class="error"></span><br>
+
+                <label for="edad">Edad</label><br>
+                <input type="number" name="edad" id="edad"><span id="errEdad" class="error"></span><br>
+
+                <input type="submit" value="enviar" id="btnEnviar">
+            </form>
+        </p>
+    </div>
+
+    <div class="box dashed">
+        <h4>Informacion de usuario</h4>
+        <hr>
+
+        <p id="parrafoNombre">Nombre: <span></span> </p>
+        <p id="parrafoApellido">Apellido: <span></span></p>
+        <p id="parrafoEdad">Edad: <span></span></p>
+
+    </div>
+
+</body>
+
+</html>
