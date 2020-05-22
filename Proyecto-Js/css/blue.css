@@ -1,0 +1,29 @@
+body{
+    background: url('../img/cielo.jpg');
+    background-attachment: fixed; /* ancla la imagen de fondo  */
+}
+#logo{
+    background: #0091ea;
+}
+
+#menu{
+    background: #0277bd;
+}
+
+#menu li:hover{
+    background:#0091ea;
+}
+
+.boton-more{
+    background: #0091ea;
+}
+#sidebar h4 span{
+    background: white;   
+}
+
+form input[type='submit']{
+    background: #cccc;
+}
+footer{
+    background: rgb(51, 51, 51,0.70);
+}

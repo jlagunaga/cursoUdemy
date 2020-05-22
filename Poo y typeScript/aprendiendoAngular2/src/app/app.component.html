@@ -1,0 +1,30 @@
+<div [ngStyle]="{
+  'background':config.fondo,
+  'padding':'20px',
+  'border':'5px solid black',
+  'border-color':config.color
+}">
+
+  <h1>bienvenido al {{title}}</h1>
+
+  <p>Vamos a aprener juntos</p>
+  <a [routerLink]="'/home'" [routerLinkActive]="'active'">Home</a>
+  &nbsp;
+  <a [routerLink]="'/zapatillas'" [routerLinkActive]="'active'">Zapatillas</a>
+  &nbsp;
+  <a [routerLink]="'/videojuego'" [routerLinkActive]="'active'">Videojuegos</a>
+  &nbsp;
+  <a [routerLink]="'/curso'" [routerLinkActive]="'active'">Cursos</a>
+  &nbsp;
+  <a [routerLink]="'/externos'" [routerLinkActive]="'active'">Externo</a>
+  &nbsp;
+  <a [routerLink]="'/contacto'" [routerLinkActive]="'active'">Contacto</a>
+  <hr>
+<!-- <button (click)='ocultarVideoJuegos(false)' *ngIf='mostrarVideojuegos'>Ocultar</button>
+<button (click)='ocultarVideoJuegos(true)'*ngIf='!mostrarVideojuegos'>Mostrar</button>
+  <videoJuegos *ngIf='mostrarVideojuegos'></videoJuegos> -->
+
+  <!-- <zapatillas></zapatillas> -->
+  <router-outlet></router-outlet> <!-- etiqueta para poder utilizar el archivo routig -->
+
+</div>

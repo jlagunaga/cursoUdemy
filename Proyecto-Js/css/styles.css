@@ -1,32 +1,30 @@
-*{
-margin:0px;
-padding: 0px;
+* {
+    margin: 0px;
+    padding: 0px;
 }
 
-.clearFix{
+.clearFix {
     float: none;
-    clear: both; /* limpiar lo flotado */
+    clear: both;
+    /* limpiar lo flotado */
 }
 
-body{
-    background: url('../img/hojas.jpg');
-    background-attachment: fixed; /* ancla la imagen de fondo  */
-}
-#global{
-width: 65%;
-margin: 0px auto;
-margin-top: 30px;
-padding: 20px;
-background: white;
-box-shadow: 0px 0px 10px  gray;
+#global {
+    width: 65%;
+    margin: 0px auto;
+    margin-top: 30px;
+    padding: 20px;
+    background: white;
+    box-shadow: 0px 0px 10px gray;
 }
 
-#logo{
+#logo {
     font-family: Verdana, Arial;
     font-size: 28px;
-    letter-spacing: 4px; /* espacio entre letras */
-    line-height: 75px; /* altura de la linea , centra el contenido en una line orizontal imaginaria */
-    background: #00796b;
+    letter-spacing: 4px;
+    /* espacio entre letras */
+    line-height: 75px;
+    /* altura de la linea , centra el contenido en una line orizontal imaginaria */
     color: white;
     text-align: center;
     width: 50%;
@@ -36,26 +34,27 @@ box-shadow: 0px 0px 10px  gray;
     text-transform: uppercase;
 }
 
-#menu{
-    font-family: Arial,Helvetica;
-    background: #424242;
+#menu {
+    font-family: Arial, Helvetica;
     width: 100%;
     text-transform: uppercase;
     margin-bottom: 20px;
 }
-#menu ul{
+
+#menu ul {
     line-height: 46px;
-    list-style: none; /* elimina los puntos por defecto de la lista */
+    list-style: none;
+    /* elimina los puntos por defecto de la lista */
 }
-#menu ul li{
+
+#menu ul li {
     height: 46px;
     display: inline-block;
-    transition: all 300ms; /* transition para el evento hover */
+    transition: all 300ms;
+    /* transition para el evento hover */
 }
-#menu li:hover{
-    background:#00796b;
-}
-#menu a{
+
+#menu a {
     display: block;
     color: white;
     text-decoration: none;
@@ -63,39 +62,51 @@ box-shadow: 0px 0px 10px  gray;
     padding-right: 30px;
 }
 
-#post{
-width: 60%;
-float: left;
-font-family: helvetica,Arial;
+#post {
+    width: 60%;
+    float: left;
+    font-family: helvetica, Arial;
 }
 
-.post{
+#box {
+    width: 60%;
+    float: left;
+    margin-top: 5%;
+}
+
+#box h2 {
+    font-size: 30px;
+    color: #424242;
+}
+
+.post {
     padding: 10px;
 }
 
-.post h2{
-font-size: 30px;
-color:#424242 ;
+.post h2 {
+    font-size: 30px;
+    color: #424242;
 }
-.date{
+
+.date {
     display: block;
     margin-top: 5px;
     color: gray;
 }
 
-.post p{
+.post p {
     margin-top: 10px;
     margin-bottom: 20px;
     line-height: 22px;
-    text-align: justify; /* justifica el texto */
+    text-align: justify;
+    /* justifica el texto */
 }
 
-.boton-more{
+.boton-more {
     font-size: 14px;
-    display: block;    
+    display: block;
     width: 75px;
     text-decoration: none;
-    background: #00796b;
     color: white;
     padding: 15px;
     text-align: center;
@@ -103,38 +114,40 @@ color:#424242 ;
     margin-bottom: 30px;
 }
 
-#sidebar{
-font-family: Helvetica, Arial;
-width: 30%;
-float: right;
+#sidebar {
+    font-family: Helvetica, Arial;
+    width: 30%;
+    float: right;
 }
 
-#sidebar h4{
+#sidebar h4 {
     margin-top: 50px;
     margin-bottom: 20px;
     text-align: center;
     line-height: 10px;
-    background: url('../img/lines.png') repeat-x; /* se agrega fondo desde un recurso y se repite en x */
+    background: url('../img/lines.png') repeat-x;
+    /* se agrega fondo desde un recurso y se repite en x */
 }
 
-#sidebar h4 span{
- background: white;   
- padding: 5px;
+#sidebar h4 span {
+    padding: 5px;
 }
-#sidebar img{
+
+#sidebar img {
     width: 100%;
-    
 }
 
-#sidebar p{
+#sidebar p {
     font-size: 15px;
     text-align: justify;
 }
 
 form input[type='text'],
 form input[type='password'],
-form input[type='email']{
-    width: 100%;
+form input[type='email'],
+form input[type='number'],
+select {
+    width: 80%;
     padding: 5px;
     border-radius: 2px;
     border: 1px solid #cccc;
@@ -142,22 +155,96 @@ form input[type='email']{
     margin-top: 5px;
 }
 
-form input[type='submit']{
-background: #cccc;
-padding: 5px;
-border: 1px solid gray;
-cursor: pointer;
+form input[type='submit'] {
+    padding: 5px;
+    border: 1px solid gray;
+    cursor: pointer;
 }
 
-footer{
-    font-family: Helvetica,Arial;
+footer {
+    font-family: Helvetica, Arial;
     color: white;
-    height: 47;
-    background: rgb(51, 51, 51,0.70);
+    padding-top: 15px;
+    padding-bottom: 15px;
     margin: 0px auto;
     width: 65%;
     padding-left: 20px;
     padding-right: 20px;
     text-align: center;
     margin-top: 50px;
+}
+
+.bx-wrapper,
+.bx-viewport {
+    height: 250px !important;
+
+}
+
+#chage_theme {
+    position: fixed;
+    top: 40%;
+    height: 100px;
+    width: 50px;
+    background: rgb(23, 32, 42, 0.5);
+}
+
+#divGreen,
+#divRed,
+#divBlue {
+    width: 25px;
+    height: 25px;
+    border: 1px solid white;
+    display: block;
+    margin: 4px auto;
+    cursor: pointer;
+}
+
+#divGreen {
+    background: #00897b;
+}
+
+#divBlue {
+    background: #0091ea;
+}
+
+#divRed {
+    background: #d32f2f;
+}
+
+.subir {
+    color: white;
+    text-decoration: none;
+    display: block;
+    float: right;
+}
+
+#reloj {
+    font-size: 40px;
+    font-weight: bold;
+    color: #333;
+    font-family: Helvetica, Arial;
+    border: 5px dashed #333;
+    width: 30%;
+    padding: 30px;
+    margin: 0px auto;
+}
+
+#form_contact {
+    width: 60%;
+    margin-top: 15px;
+    font-family: Arial, Helvetica;
+}
+
+#form_contact label {
+    width: 100%;
+    display: block;
+    margin-top: 5px;
+}
+.form-error{
+width: 77%;
+color: red;
+float: right;
+padding-right: 10px;
+padding-top: 2px;
+font-size: 13px;
 }

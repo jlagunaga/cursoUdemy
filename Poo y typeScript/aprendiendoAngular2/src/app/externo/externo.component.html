@@ -1,0 +1,39 @@
+<form #NewUserForm="ngForm" (ngSubmit)="onSubmit(NewUserForm)">
+  <label for="txtUsusario">Usuario:</label><br>
+  <input type="text" name="txtUsusario"  #usuario="ngModel" [(ngModel)]="newUsers.name" required />
+  <span *ngIf="!usuario.valid && usuario.touched">
+    Usuario es necesario
+  </span><br>
+  <label for="txtTrabajo">Trabajo:</label><br>
+  <input type="text" name="txtTrabajo"  #jobs="ngModel" [(ngModel)]="newUsers.job" required />
+  <span *ngIf="!jobs.valid && jobs.touched">
+    Job es necesario
+  </span><br>
+  <input type="submit" value="Enviar" [disabled]="!NewUserForm.valid">
+</form>
+
+
+
+<hr>
+<strong>
+  <!-- pipe de angular para formatear fecha -->
+  {{fecha | date:'dd/mm/yy'}}
+</strong>
+<br>
+{{4| calculadora:2}}
+
+<hr>
+<input type="text" [(ngModel)]="idUser" (keyup.enter)="cargarusuario()">
+<p>{{idUser}}</p>
+
+<!-- opcionar para mostrar cargando  -->
+<div *ngIf="!users">
+  <strong> Cargando...</strong>
+</div>
+<!-- fin -->
+
+<div *ngIf="users">
+  <p><strong>{{users.first_name +' ' + users.last_name}}</strong></p>
+  <img src="{{users.avatar}}">
+
+</div>

@@ -1,0 +1,15 @@
+/* se debe agregar este archivo css en la archivo de configuracion angular.ts */
+.miClase{
+    color: gray;;
+    font-size: 18px;
+}
+.fondoRojo{
+background:red ;
+}
+.subrayado{
+text-decoration: underline;
+}
+.active{
+    text-decoration: none;
+    border: 3px solid yellow;
+}

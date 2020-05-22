@@ -10,16 +10,23 @@
     <link id="theme" rel="stylesheet" type="text/css" href="css/red.css">
 
     <!-- jQuery -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"
+        integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+
+    <!-- jquery ui -->
+    <link rel="stylesheet" href="js/jquery-ui-1.12.1/jquery-ui.min.css">
+    <link rel="stylesheet" href="js/jquery-ui-1.12.1/jquery-ui.structure.min.css">
+    <link rel="stylesheet" href="js/jquery-ui-1.12.1/jquery-ui.theme.min.css">
+
+    <!-- cargar validator form -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-form-validator/2.3.26/jquery.form-validator.min.js">
+    </script>
 
     <!-- Moment CDN -->
     <script src="js/moment/moment.js"></script>
     <script src="js/moment/moment-with-locales.js"></script>
 
-
-    <!-- Slider -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
-    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+    <script type="text/javascript" src="js/jquery-ui-1.12.1/jquery-ui.min.js"></script>
 
     <!-- archivos javaScript -->
     <script type="text/javascript" src="js/main.js"></script>
@@ -27,6 +34,7 @@
 </head>
 
 <body>
+
     <div id="chage_theme">
         <div id="divGreen"></div>
         <div id="divRed"></div>
@@ -44,26 +52,42 @@
                     <li><a href="Index.html">Inicio</a></li>
                     <li><a href="Reloj.html">Reloj</a></li>
                     <li><a href="About_Me.html">Sobre Mi</a></li>
-                    <li><a href="Contacto.html">Contacto</a></li>
+                    <li><a href="#">Contacto</a></li>
                 </ul>
             </nav>
         </header>
 
-
-        <!-- SLIDER -->
-        <div id="slider">
-            <div class="bxslider">
-                <div><img src="img/rojo.jpg" title="Flecha"></div>
-                <div><img src="img/caracol.jpg" title="Caracol"></div>
-                <div><img src="img/cielo.jpg" title="Cielo"></div>
-            </div>
-        </div>
-        <!-- cambio de thema -->
-
         <!-- contenido -->
         <section id="content">
-            <div id="post">
-                <!-- cargar posts desde json -->
+            <div id="box">
+                <!-- Formulario -->
+                <h2>Contacto</h2>
+                <form action="" method="POST" id="form_contact">
+                    <label for="name">Nombre</label>
+                    <input type="text" name="name" data-validation="alphanumeric">
+
+                    <label for="apellido">Apellido</label>
+                    <input type="text" name="apellido" data-validation="alphanumeric">
+
+                    <label for="email">Email</label>
+                    <input type="email" name="email" data-validation="email">
+
+                    <label for="sex">Sexo</label>
+                    <select name="sex" data-validation="required">
+                        <option value="mujer">Mujer</option>
+                        <option value="mujer">Hombre</option>
+                    </select>
+
+                    <label for="fechaNac">Fecha de Nacimiento</label>
+                    <input type="text" name="fechaNac" data-validation="date" data-validation-format="dd-mm-yyyy">
+
+                    <label for="edad">Edad</label>
+                    <input type="number" name="edad" data-validation="number">
+
+                    <input type="submit" value="Enviar">
+
+                </form>
+
             </div>
 
             <aside id="sidebar">

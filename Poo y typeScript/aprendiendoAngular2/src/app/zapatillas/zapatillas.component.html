@@ -1,0 +1,63 @@
+<h2>{{titulo}}</h2>
+
+<p>Nueva Marca</p>
+<p><input type="text" [(ngModel)]="mi_marca" (keyup.enter)='addMarca()'>
+  <button (click)="addMarca()">Add Marca</button>
+</p>
+<p>{{mi_marca}}</p>
+
+
+<p>las marcas disponibles son las siguientes</p>
+<select name="" id="">
+  <option *ngFor="let item of arrMarcas;let indice=index" [value]="indice">{{item}}</option>
+</select>
+
+<ul>
+  <li *ngFor="let item of arrMarcas;let indice=index" [value]="indice">{{item}}
+    <button (click)=borrarMarca(indice)>Borrar</button>
+  </li>
+</ul>
+
+<br>
+<hr>
+<ul>
+  <li *ngFor="let item of  objZapatilla">
+    <span [ngStyle]="{
+            'text-decoration':!item.stock? 'line-through': 'none'
+        }">
+      {{item.nombre}} - <strong [class.miClase]="item.precio>100"
+                        [ngClass]="{
+                            'fondoRojo':item.precio>110,
+                            'subrayado': item.marca=='Adiddas'}"> 
+                            {{item.precio}} </strong> {{item.stock}}
+    </span>
+
+    <span *ngIf="item.precio<100 " [style.background]="item.precio<100 ? 'green': 'transparent' "
+      [style.color]="'gray'">
+      !EN OFERTA!
+    </span>
+  </li>
+</ul>
+<p>El color de la mayoria de nuestras zapatillas es:</p>
+
+<select [(ngModel)]="color">
+  <option value="yellow">Amarillo</option>
+  <option value="blue">Azul</option>
+  <option value="red">Rojo</option>
+  <option value="orange">Naranja</option>
+</select>
+
+<ul [ngSwitch]="color">
+  <li *ngSwitchCase="'yellow'">
+    el color predominante es el <span [ngStyle]="{'background':color}">Amarillo</span>
+  </li>
+  <li *ngSwitchCase="'blue'">
+    el color predominante es el <span [ngStyle]="{'background':color}">Azul</span>
+  </li>
+  <li *ngSwitchCase="'red'">
+    el color predominante es el <span [ngStyle]="{'background':color}">Rojo</span>
+  </li>
+  <li *ngSwitchCase="'orange'">
+    el color predominante es el <span [ngStyle]="{'background':color}">Naranja</span>
+  </li>
+</ul>

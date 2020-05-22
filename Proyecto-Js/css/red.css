@@ -1,0 +1,30 @@
+body{
+    background: url('../img/rojo.jpg');
+    background-attachment: fixed; /* ancla la imagen de fondo  */
+}
+#logo{
+    background: #d32f2f;
+}
+
+#menu{
+    background: #b71c1c;
+}
+
+#menu li:hover{
+    background:#d32f2f;
+}
+
+.boton-more{
+    background: #d32f2f;
+}
+#sidebar h4 span{
+    background: white;   
+}
+
+form input[type='submit']{
+    background: #cccc;
+}
+footer{
+    background: rgb(51, 51, 51,0.70);
+}
+
