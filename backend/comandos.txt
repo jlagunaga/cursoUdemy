@@ -1,0 +1,20 @@
+-- Crear un nuevo repositorio de Nodejs.
+	mpm init
+
+-- instalar framework express trabaja con el portocolo https (Define rutas).
+	npm install express --save (Guarada dependendic aen el Py actual)
+
+-- instalar body parse permite converitir la respuesd desde el backen en JSON.
+	npm body-parser --save
+
+-- instalar conect-multiparte permite recibir archivos y guardarlo en una carpeta del servidor.
+	npm install connect-multiparty --save
+
+-- instalar mongous libreria para trabajar con mongoDB (Contiene metodos y procedimientos).
+	npm install mongoose --save 
+
+-- insatalar nodemon  permite refrescar el servidor con cada cambio luego de haber iniciado el servicio util solo en para desarollo, en produccion no se debe tomar en cuenta.
+	npm install nodemon --save-dev
+
+-- iniciar el servidor node 
+	npm start

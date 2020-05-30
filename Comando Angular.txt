@@ -1,0 +1,25 @@
+- Compilar el archivo tx a js
+	tsc 02-hola_mundo.ts
+
+- compilacion automatica de todos los arhivos ts
+	tsc 
+
+- Instalar Angular/ CLI
+	npm install -g @angular/CLI
+
+- Crear Nuevo py en angular (se debe estar en la carpeta del proyecto)
+	ng new 'nombre del proyecto'
+
+-  elimina los datos del cache para lograr instalacion 
+	npm cache clean --force
+
+- arrancar el servidor de angular entrar al directorio del py y ejecutar
+ng serve
+
+- generar un nuevo componente desde comando
+
+ng generate component 'nombre de componente'
+
+-- Instalar Jquery para angular (en la carpeta del projecto), luego se debe agregar en enl archivo.jason 
+
+npm install --save jquery
