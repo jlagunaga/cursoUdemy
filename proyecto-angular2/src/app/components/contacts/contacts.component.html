@@ -1,1 +1,24 @@
-<p>contacts works!</p>
+<div class="container">
+  <h2>Contactos </h2>
+  <p>
+    <input type="number" [(ngModel)]=" largo" (keyup.enter)="enviarLargo()" />
+
+    <button (click)="resetearValor()">Resetear</button>
+  </p>
+  <slider *ngIf="largonEnviar" [anchura]="largonEnviar" (conseguirAutor)="recojerObjeto($event)"> </slider>
+
+  {{autor.nombre +' ' + autor.website }}
+
+
+  <!-- Ejemplo de View Child -->
+
+  <div #Viewchild id="Viewchild">
+
+    <p appResaltado>elemento de muestra para comprobar el funcionamienteo de view Child en Angular
+
+    </p>
+
+  </div>
+
+  <h2 appResaltado> el juego </h2>
+</div>

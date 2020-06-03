@@ -13,6 +13,8 @@ import { DetailsComponent } from './components/details/details.component';
 import { EditProjectComponent } from './components/edit-project/edit-project.component';
 import { ErrorComponent } from './components/error/error.component';
 import { ProyectComponent } from './components/proyect/proyect.component';
+import { SliderComponent } from './components/slider/slider.component';
+import { ResaltadoDirective } from './resaltado.directive';
 
 @NgModule({
   declarations: [
@@ -23,7 +25,9 @@ import { ProyectComponent } from './components/proyect/proyect.component';
     DetailsComponent,
     EditProjectComponent,
     ErrorComponent,
-    ProyectComponent
+    ProyectComponent,
+    SliderComponent,
+    ResaltadoDirective
   ],
   imports: [
     BrowserModule,

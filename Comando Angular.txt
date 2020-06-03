@@ -23,3 +23,13 @@ ng generate component 'nombre de componente'
 -- Instalar Jquery para angular (en la carpeta del projecto), luego se debe agregar en enl archivo.jason 
 
 npm install --save jquery
+
+-- desinstalar Angular 
+
+npm uninstall -g @angular/cli
+
+-- actualizar proyecto de angular 
+
+instalar en el generador 
+
+
